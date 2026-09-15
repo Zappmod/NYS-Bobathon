@@ -67,12 +67,12 @@
     },
     {
       "id": "soh-bobathon",
-      "title": "State of Ohio Bobathon",
-      "description": "Five hands-on labs: Java modernization (WebSphere → Liberty, Java 8 → 21), vibe coding an HR tracker, Bob for Z mainframe, building a wxO AI agent, and Excel financial analysis automation.",
+      "title": "Java Modernization",
+      "description": "Transform a legacy pharmacy app through 6 hands-on labs: Liberty replatforming, Java 8 → 21 upgrade, Struts → Angular UI, unit test generation, TDD, and security vulnerability remediation.",
       "file": "soh-bobathon.md",
-      "duration": "Varies",
-      "difficulty": "All levels",
-      "icon": "🏛️"
+      "duration": "4–6 hrs",
+      "difficulty": "Intermediate",
+      "icon": "☕"
     }
   ]
 }
