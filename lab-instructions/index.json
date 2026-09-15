@@ -1,0 +1,123 @@
+{
+  "title": "Bob Premium for Z",
+  "subtitle": "Bobathon Guide",
+  "labs": [
+    {
+      "id": "lab-setup",
+      "title": "Lab 1: Getting Started",
+      "description": "Set up Bob, scan your workspace, initialize Agent.md, and generate a Data Dictionary.",
+      "file": "lab-setup.md",
+      "duration": "20 min",
+      "difficulty": "Beginner",
+      "icon": "🚀"
+    },
+    {
+      "id": "technical-design",
+      "title": "Lab 2: Technical Design Document",
+      "description": "Generate a comprehensive technical design document from your COBOL codebase with Mermaid diagrams.",
+      "file": "technical-design.md",
+      "duration": "10–15 min",
+      "difficulty": "Beginner",
+      "icon": "📐"
+    },
+    {
+      "id": "understand",
+      "title": "Lab 3: Application Discovery & Understanding",
+      "description": "Explore call graphs, DB2 access graphs, flow charts, complexity reports, and variable data flow across the GENAPP application.",
+      "file": "understand.md",
+      "duration": "30 min",
+      "difficulty": "Beginner",
+      "icon": "🗺️"
+    },
+    {
+      "id": "impact-analysis",
+      "title": "Lab 4: Impact Analysis",
+      "description": "Analyze the ripple effects of a field change across your entire mainframe application landscape.",
+      "file": "impact-analysis.md",
+      "duration": "30 min",
+      "difficulty": "Beginner",
+      "icon": "🔍"
+    },
+    {
+      "id": "dead-code-technical-debt",
+      "title": "Lab 5: Dead Code & Technical Debt",
+      "description": "Surface unreachable paragraphs, unused variables, and orphaned copybooks, then rank every program by a weighted technical debt scorecard.",
+      "file": "dead-code-technical-debt.md",
+      "duration": "60 min",
+      "difficulty": "Intermediate",
+      "icon": "🧹"
+    },
+    {
+      "id": "refactoring",
+      "title": "Lab 6: Refactoring & Service Extraction",
+      "description": "Identify business rules in monolithic COBOL programs, check dependencies, and extract business services for modernization.",
+      "file": "refactoring.md",
+      "duration": "60 min",
+      "difficulty": "Intermediate",
+      "icon": "🔧"
+    },
+    {
+      "id": "spec-driven-code-gen",
+      "title": "Lab 7: Spec-Driven Code Generation",
+      "description": "Use a program specification to generate a complete CICS COBOL program and verify it against requirements.",
+      "file": "spec-driven-code-gen.md",
+      "duration": "45 min",
+      "difficulty": "Intermediate",
+      "icon": "⚙️"
+    },
+    {
+      "id": "soh-lab1-liberty-replatforming",
+      "title": "☕ Lab 1: Liberty Replatforming",
+      "description": "Migrate a legacy pharmacy app from Traditional WebSphere to Liberty runtime using Bob's Java Modernization workflow. Covers migration plan analysis, interactive approval flow, and deployment validation.",
+      "file": "soh-lab1-liberty-replatforming.md",
+      "duration": "45–60 min",
+      "difficulty": "Intermediate",
+      "icon": "☕"
+    },
+    {
+      "id": "soh-lab2-java-upgrade",
+      "title": "☕ Lab 2: Java Upgrade (8 → 21)",
+      "description": "Upgrade the pharmacy app from Java 8 to Java 21 with Jakarta EE 10. Covers OpenRewrite recipes, mid-workflow CVE scanning, Struts 2→7 ActionSupport rewrite, and the visual modernization summary.",
+      "file": "soh-lab2-java-upgrade.md",
+      "duration": "45–60 min",
+      "difficulty": "Intermediate",
+      "icon": "☕"
+    },
+    {
+      "id": "soh-lab3-ui-modernization",
+      "title": "☕ Lab 3: UI Modernization",
+      "description": "Migrate the pharmacy frontend from legacy Struts/JSP to a modern React + Material UI SPA, backed by Jakarta EE REST services, using Bob's Java UI Modernization workflow.",
+      "file": "soh-lab3-ui-modernization.md",
+      "duration": "60–90 min",
+      "difficulty": "Intermediate",
+      "icon": "☕"
+    },
+    {
+      "id": "soh-lab4-unit-tests",
+      "title": "☕ Lab 4: Unit Test Generation",
+      "description": "Generate a comprehensive JUnit 5 test suite with Mockito and JaCoCo coverage using Bob's standalone Java Unit Testing workflow. Covers batch subagent generation, 80% confidence previews, and coverage reports.",
+      "file": "soh-lab4-unit-tests.md",
+      "duration": "60–75 min",
+      "difficulty": "Intermediate",
+      "icon": "☕"
+    },
+    {
+      "id": "soh-lab4-alt-tdd",
+      "title": "☕ Lab Alt-4: Test Driven Development",
+      "description": "Implement API-first TDD from an OpenAPI 3.0 spec — generate tests before writing code, implement PrescriptionResource driven by those tests, and compare TDD vs traditional development outcomes.",
+      "file": "soh-lab4-alt-tdd.md",
+      "duration": "45–60 min",
+      "difficulty": "Intermediate",
+      "icon": "☕"
+    },
+    {
+      "id": "soh-lab5-security",
+      "title": "☕ Lab 5: Security Vulnerability Remediation",
+      "description": "Scan the pharmacy app's full dependency tree for CVEs using Bob's Java Vulnerabilities Detection workflow, then remediate each finding through an interactive approval flow and verify a clean re-scan.",
+      "file": "soh-lab5-security.md",
+      "duration": "60–75 min",
+      "difficulty": "Intermediate",
+      "icon": "☕"
+    }
+  ]
+}
