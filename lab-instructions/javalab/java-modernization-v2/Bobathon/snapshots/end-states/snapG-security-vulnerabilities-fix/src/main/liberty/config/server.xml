@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server description="Simple Pharmacy - Modern Angular + JAX-RS REST API (Java 21 + Jakarta EE 10)">
+    <featureManager>
+        <!-- Jakarta EE 10 Web Profile -->
+        <feature>jakartaee-10.0</feature>
+        <!-- Or use individual features for more control: -->
+        <!-- <feature>restfulWS-3.1</feature> -->
+        <!-- <feature>jsonb-3.0</feature> -->
+        <!-- <feature>jsonp-2.1</feature> -->
+        <!-- <feature>servlet-6.0</feature> -->
+        <!-- <feature>cdi-4.0</feature> -->
+        
+        <!-- MicroProfile Metrics (optional) -->
+        <feature>mpMetrics-5.0</feature>
+    </featureManager>
+    
+    <!-- HTTP Endpoint Configuration -->
+    <httpEndpoint id="defaultHttpEndpoint"
+                  httpPort="9081"
+                  httpsPort="9443"
+                  host="*" />
+    
+    <!-- Security Fix: Use encoded passwords and environment variables
+         To generate encoded password:
+         ${wlp.install.dir}/bin/securityUtility encode --encoding=xor yourPassword
+         
+         For production, use LDAP or external authentication instead of basicRegistry
+    -->
+    <basicRegistry id="basic" realm="BasicRealm">
+        <!-- Use environment variables for credentials in production -->
+        <user name="${env.ADMIN_USER}" password="${env.ADMIN_PASSWORD}" />
+        <user name="${env.APP_USER}" password="${env.APP_PASSWORD}" />
+    </basicRegistry>
+    
+    <!-- Default values for development only (override with environment variables) -->
+    <variable name="ADMIN_USER" defaultValue="admin" />
+    <variable name="ADMIN_PASSWORD" defaultValue="{xor}Lz4sLCgwLTs=" />  <!-- encoded: adminPass -->
+    <variable name="APP_USER" defaultValue="user" />
+    <variable name="APP_PASSWORD" defaultValue="{xor}Lz4sLCgwLTor" />  <!-- encoded: userPass -->
+    
+    <application id="simple-pharmacy" location="simple-pharmacy.war" name="simple-pharmacy" type="war" context-root="/simple-pharmacy"/>
+    <applicationManager autoExpand="true"/>
+</server>

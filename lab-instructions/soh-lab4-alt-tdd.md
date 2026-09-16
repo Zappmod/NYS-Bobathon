@@ -225,16 +225,15 @@ IBM Bob enables efficient Test Driven Development by:
 Generate a comprehensive unit test suite from the OpenAPI specification using Bob's TDD methodology.
 
 ### Bob Mode Required
-**Switch to 💻 Code Mode** before starting this exercise. Code mode is optimized for generating test files and implementation code.
+**Use Agent mode** for this exercise. Agent mode has full read, edit, and execute capabilities needed to generate test files and implementation code.
 
 ### Steps
 
 1. **Open Bob Chat Interface**
    - If the Bob Chat window is not already open, click the Bob icon in your IDE's sidebar
 
-2. **Switch to Code Mode**
-   - In Bob's chat interface, ensure you are in **💻 Code Mode**
-   - If not, switch to Code mode by typing `/mode code` or selecting it from the mode selector
+2. **Confirm Agent mode**
+   - In Bob's chat panel, verify the mode indicator at the bottom shows **Agent**
 
 2. **Ensure TDD Folder is Open**
    - Verify you have the `snapTDD` folder open in your workspace
@@ -338,13 +337,12 @@ Review the generated tests for:
 Create the `PrescriptionResource.java` implementation driven by the unit tests, following pure TDD methodology. The file should be created in the Maven standard location within snapTDD: `snapTDD/src/main/java/com/pharmacy/api/PrescriptionResource.java`.
 
 ### Bob Mode Required
-**Stay in 💻 Code Mode** for this exercise. Code mode is ideal for implementing Java classes based on test requirements.
+**Stay in Agent mode** for this exercise.
 
 ### Steps
 
-1. **Ensure You're in Code Mode**
-   - Verify you are still in **💻 Code Mode** from Exercise 1
-   - If not, switch by typing `/mode code`
+1. **Ensure You're in Agent mode**
+   - Verify the mode indicator at the bottom still shows **Agent**
 
 2. **Request Implementation from Tests**
    
@@ -452,16 +450,11 @@ Verify the implementation includes:
 Compare the TDD-generated implementation with a traditional implementation to understand the benefits and differences of Test Driven Development.
 
 ### Bob Mode Required
-**Switch to ❓ Ask Mode** for this exercise. Ask mode is optimized for analysis, comparison, and explanations without making code changes.
+**Stay in Agent mode** for this exercise. You can ask Bob to perform analysis without making changes simply by asking analytical questions.
 
 ### Steps
 
-1. **Switch to Ask Mode**
-   - In Bob's chat interface, switch to **❓ Ask Mode**
-   - Type `/mode ask` or select it from the mode selector
-   - Ask mode is best for analytical tasks and comparisons
-
-2. **Add Original Implementation to Workspace**
+1. **Add Original Implementation to Workspace**
    
    - In Bob IDE, add the api folder containing the original implementation from `../lab4-unit-test-generation/snapD-unit-test-gen/src/main/java/com/pharmacy/api/PrescriptionResource.java`
    - Copy the PrescriptionResource.java to snapTDD. Change the name to traditional_PrescriptionResource.java.
@@ -527,7 +520,7 @@ The comparison demonstrates:
 Execute the generated tests to verify the implementation meets all requirements.
 
 ### Bob Mode Required
-**Use 💻 Code Mode** for creating the pom.xml file. You can stay in Code mode or switch to a terminal for running tests.
+**Use Agent mode** for creating the pom.xml file.
 
 ### Steps
 
@@ -660,15 +653,11 @@ Execute the generated tests to verify the implementation meets all requirements.
 Apply the "Refactor" phase of TDD to improve code quality while maintaining test coverage.
 
 ### Bob Mode Required
-**Switch to ❓ Ask Mode** for this exercise. Ask mode is best for reviewing code and getting refactoring suggestions without making changes.
+**Stay in Agent mode** for this exercise.
 
 ### Steps
 
-1. **Switch to Ask Mode**
-   - In Bob's chat interface, switch to **❓ Ask Mode**
-   - Type `/mode ask` or select it from the mode selector
-
-2. **Identify Improvement Opportunities**
+1. **Identify Improvement Opportunities**
    
    Ask Bob:
    ```
@@ -685,10 +674,7 @@ Apply the "Refactor" phase of TDD to improve code quality while maintaining test
    - Extract constants for magic values
    - Improve code documentation
 
-4. **Switch to Code Mode to Apply Refactoring**
-   - In Bob's chat interface, switch to **💻 Code Mode**
-   - Type `/mode code` or select it from the mode selector
-   
+4. **Apply Refactoring**
    Ask Bob to apply the refactoring:
    ```
    Apply the refactoring improvements you suggested to PrescriptionResource.java. Start with extracting constants for magic values and using createErrorResponse() consistently.

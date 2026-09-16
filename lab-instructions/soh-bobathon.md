@@ -183,7 +183,7 @@ IBM Bob is an AI-powered coding assistant that integrates seamlessly with VS Cod
 - Achieving high code coverage (>80%)
 - Validating test quality and effectiveness
 
-**Starting Point:** `Bobathon/snapshots/start-states/snapD-unit-test-gen/`
+**Starting Point:** `Bobathon/labs/lab4-unit-test-generation/snapD-unit-test-gen/`
 
 | | |
 |---|---|
@@ -228,7 +228,7 @@ IBM Bob is an AI-powered coding assistant that integrates seamlessly with VS Cod
 - Implementing input validation and sanitization
 - Validating security improvements
 
-**Starting Point:** `Bobathon/snapshots/start-states/snapE-security-vulnerabilities/`
+**Starting Point:** `Bobathon/labs/lab5-security-vulnerability-remediation/snapE-security-vulnerabilities/`
 
 | | |
 |---|---|
@@ -320,9 +320,9 @@ Choose any lab based on your learning goals. Each snapshot provides everything n
 
 ## Templates & Resources
 
-**IBM Bob Model Import Template** (`Bobathon/IBM_BOB_Model_Import_Template.pdf`): Reference guide for importing AI models into IBM Bob including configuration instructions, parameter setup, and best practices.
+**IBM Bob Model Import Template** (`Bobathon/IBM_BOB_Model_Import_Template.pdf`): Reference guide for importing AI models into IBM Bob including configuration instructions, parameter setup, and best practices. *(File lives in the `java-modernization-v2` source repo — not included in this lab site bundle.)*
 
-**Java Modernization Export Configuration** (`Bobathon/java-modernization-export.yaml`): YAML configuration template for customizing Java modernization exports — output paths, analysis depth, and metric collection options.
+**Java Modernization Export Configuration** (`Bobathon/java-modernization-export.yaml`): YAML configuration template for customizing Java modernization exports — output paths, analysis depth, and metric collection options. *(File lives in the `java-modernization-v2` source repo — not included in this lab site bundle.)*
 
 ---
 
@@ -332,7 +332,7 @@ Choose any lab based on your learning goals. Each snapshot provides everything n
 |-------|-----------|
 | Bob Mode Not Available | Ensure IBM Bob is v1.0.0+. Try typing `/mode` in Bob's chat to see available modes. |
 | Maven Not Detected | Restart your IDE after installing Maven via SDKMAN! Verify: `mvn --version` |
-| Port Already in Use | Check if another app is using the port (typically 9081). Stop any running servers: `./stop-liberty.sh` |
+| Port Already in Use | Check if another app is using the port (typically 9081). Stop any running servers: `mvn liberty:stop` (or run `./stop-liberty.sh` if present in your snapshot folder) |
 | Build Failures | Ensure all prerequisites are installed, check Java version matches lab requirements, and review the lab guide's troubleshooting section. |
 
 ---
