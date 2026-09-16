@@ -163,7 +163,7 @@ You can control what Bob does automatically using the permissions selector in th
 
 > 💡 **Tip for first-time users:** Start with only **Read** enabled until you're comfortable, then expand permissions as you gain confidence.
 
-![Permissions selector showing Read, Edit, Execute, and MCP toggles](screenshots/screenshot-2026-07-10-at-11.56.12-am.png)
+![Permissions selector showing Read, Edit, Execute, and MCP toggles](images/screenshot-2026-07-10-at-11.56.12-am.png)
 
 ---
 
@@ -180,19 +180,19 @@ Bobathon/ce-labs/lab1-java-liberty-replatforming/snapA-java-liberty-replatformin
 
 If the Bob chat window is not already open, select the Bob icon to the right of the search bar at the top of your IDE.
 
-![Bob IDE with snapA folder open in the file explorer](screenshots/screenshot-2026-07-10-at-11.31.42-am.png)
+![Bob IDE with snapA folder open in the file explorer](images/screenshot-2026-07-10-at-11.31.42-am.png)
 
 ### 2. Confirm Agent mode
 
 In Bob's chat panel, verify the mode indicator at the bottom shows **Agent**. Agent is V2's default mode and replaces V1's `Advanced` and `Code` modes.
 
-![Agent mode indicator at the bottom of the Bob chat panel](screenshots/screenshot-2026-07-10-at-11.32.11-am.png)
+![Agent mode indicator at the bottom of the Bob chat panel](images/screenshot-2026-07-10-at-11.32.11-am.png)
 
 ### 3. Confirm the workflow appears
 
 Look for the **Java Modernization** workflow in Bob's chat panel workflow list. If it's not visible, verify your team membership in Bob's settings.
 
-![Java Modernization workflow card in the Workflows tab](screenshots/screenshot-2026-07-10-at-11.55.01-am.png)
+![Java Modernization workflow card in the Workflows tab](images/screenshot-2026-07-10-at-11.55.01-am.png)
 
 ---
 
@@ -216,14 +216,14 @@ Use Bob's Java Modernization workflow to migrate the pharmacy app from Tradition
    - Leave "Custom build command" blank.
    - Click **Continue**.
 
-   ![Analyze Project panel with project path auto-populated](screenshots/screenshot-2026-07-10-at-11.58.23-am.png)
+   ![Analyze Project panel with project path auto-populated](images/screenshot-2026-07-10-at-11.58.23-am.png)
 
 3. **Analyze — Select Modernization Type**
    - Select **Liberty Replatforming**.
    - Toggle **Git Flow** off (Git branch management should be done outside the workflow for this lab).
    - Click **Continue**.
 
-   ![Select Modernization Type panel with Liberty Replatforming selected and Git Flow off](screenshots/screenshot-2026-07-10-at-1.00.33-pm.png)
+   ![Select Modernization Type panel with Liberty Replatforming selected and Git Flow off](images/screenshot-2026-07-10-at-1.00.33-pm.png)
 
 4. **Upgrade — Provide the AMA migration plan**
    - Paste the full path to the migration plan ZIP file:
@@ -232,7 +232,7 @@ Use Bob's Java Modernization workflow to migrate the pharmacy app from Tradition
      ```
    - Click **Continue**. Bob will analyze the plan and create a to-do list for modernization.
 
-   ![AMA migration plan path input panel](screenshots/screenshot-2026-07-10-at-1.01.39-pm.png)
+   ![AMA migration plan path input panel](images/screenshot-2026-07-10-at-1.01.39-pm.png)
 
 5. **Upgrade — Interactive approval flow**
 
@@ -250,9 +250,9 @@ Use Bob's Java Modernization workflow to migrate the pharmacy app from Tradition
 
    > **Note**: If you're ever unsure about an action Bob wants to take, review the reasoning that precedes the request, or ask a follow-up question in chat before approving.
 
-   ![Interactive approval prompt showing Bob's rationale and the three approval options](screenshots/screenshot-2026-07-10-at-1.04.21-pm.png)
+   ![Interactive approval prompt showing Bob's rationale and the three approval options](images/screenshot-2026-07-10-at-1.04.21-pm.png)
 
-   ![Diff preview showing the exact edits Bob is proposing](screenshots/screenshot-2026-07-10-at-1.06.30-pm.png)
+   ![Diff preview showing the exact edits Bob is proposing](images/screenshot-2026-07-10-at-1.06.30-pm.png)
 
    **Expected issues on this project** (may vary):
    - Javassist charset warning (dependency exclusion + upgrade)
@@ -273,7 +273,7 @@ Use Bob's Java Modernization workflow to migrate the pharmacy app from Tradition
    - Confirm the workflow reports "started successfully with no errors," or select the appropriate option based on your logs.
    - If there are errors, copy and paste them into the Bob chat for debugging.
 
-   ![Visual modernization and deployment summary](screenshots/screenshot-2026-07-10-at-1.27.24-pm.png)
+   ![Visual modernization and deployment summary](images/screenshot-2026-07-10-at-1.27.24-pm.png)
 
 ---
 
@@ -292,7 +292,7 @@ http://localhost:9080/simple-pharmacy/dashboard
 
 You should see the pharmacy dashboard with data (prescriptions, orders, medicines).
 
-![Pharmacy dashboard running on Liberty at localhost:9080](screenshots/screenshot-2026-07-10-at-1.29.38-pm.png)
+![Pharmacy dashboard running on Liberty at localhost:9080](images/screenshot-2026-07-10-at-1.29.38-pm.png)
 
 
 Try navigating to each page to confirm the full app works:
@@ -301,7 +301,7 @@ Try navigating to each page to confirm the full app works:
 - `http://localhost:9080/simple-pharmacy.war/order-list.action`
 - `http://localhost:9080/simple-pharmacy.war/medicine-list.action`
 
-![Prescription list page confirming full app navigation works](screenshots/screenshot-2026-07-10-at-1.30.33-pm.png)
+![Prescription list page confirming full app navigation works](images/screenshot-2026-07-10-at-1.30.33-pm.png)
 
 If all pages render correctly, the migration is complete.
 
