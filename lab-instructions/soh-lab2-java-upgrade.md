@@ -188,7 +188,7 @@ Click the play button (▶) at the top of the Bob chat window to open the **Work
 - **Workflow button not available?** Ensure your Bob installation is up to date
 - **Can't find workflow in list?** Verify you've opened the correct repository and are on the correct account
 
-![Java Modernization workflow card in the Workflows tab](screenshots/screenshot-2026-07-10-at-11.55.01-am.png)
+![Java Modernization workflow card in the Workflows tab](images/snap-04.png)
 
 ---
 
@@ -213,7 +213,7 @@ Bob will display the **Analyze Project** panel.
 - Leave "Custom build command" blank.
 - Click **Continue**.
 
-![Analyze Project panel with project path auto-populated](screenshots/screenshot-2026-07-10-at-11.58.23-am.png)
+![Analyze Project panel with project path auto-populated](images/snap-05.png)
 
 Bob will scan the project, detect it is a Java 8 application, and perform an initial build to confirm the baseline compiles cleanly.
 
@@ -230,7 +230,7 @@ Bob will present a modernization type selector. Make the following choices:
 
 Click **Continue**.
 
-![Select Modernization Type panel with Java Upgrade selected and Git Flow off](screenshots/screenshot-2026-07-10-at-2.19.22-pm.png)
+![Select Modernization Type panel with Java Upgrade selected and Git Flow off](images/snap-01.png)
 
 ---
 
@@ -246,7 +246,7 @@ Bob will display the Java Upgrade configuration panel. Enter the following setti
 
 Click **Run Recipes**.
 
-![Java Upgrade Configuration panel with Semeru, Java 21, and Jakarta EE 10 selected](screenshots/screenshot-2026-07-10-at-2.20.40-pm.png)
+![Java Upgrade Configuration panel with Semeru, Java 21, and Jakarta EE 10 selected](images/snap-02.png)
 
 > **Note:** If Bob detects that Java 21 (Semeru) is not yet installed on your machine, it will prompt you to install it. Click **Install** to allow Bob to install it via SDKMAN! before continuing. The workflow will resume automatically once installation finishes.
 
@@ -270,7 +270,7 @@ After the initial upgrade and build validation complete, Bob scans all project d
 - Bob will report the number of vulnerabilities found (typically **~13 CVEs** across `struts2-core`, `commons-io`, `commons-lang3`).
 - When prompted **"Do you want to start a subtask to fix the detected vulnerabilities?"**, click **Yes**.
 
-![CVE scan subtask prompt asking to fix detected vulnerabilities](screenshots/screenshot-2026-07-10-at-2.36.45-pm.png)
+![CVE scan subtask prompt asking to fix detected vulnerabilities](images/snap-03.png)
 
 Bob will:
 - Upgrade `struts2-core` from 2.5.x to **7.2.1**
