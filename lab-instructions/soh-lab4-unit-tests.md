@@ -186,7 +186,7 @@ Look for **Java Unit Testing** in Bob's chat panel workflow list (it is a top-le
 - Select **Java Unit Testing** from the list of workflows
 - Click (▶) **Start**
 
-![Workflow action](./images/Workflow_select_image.png)
+![Workflow action](images/Workflow_select_image.png)
 
 ### 2. Automatic setup
 
@@ -215,7 +215,7 @@ Once Bob finishes drafting `UNITTEST.md`, the task-selection screen appears. Fil
 Click **Continue**.
 
 
-![Workflow select](./images/Workflow_action_image.png)
+![Workflow select](images/Workflow_action_image.png)
 
 ### 4. Cost/time preview
 
@@ -277,7 +277,7 @@ open target/site/jacoco/index.html
 
 Compare the package-level coverage numbers to Bob's reported baseline. Your report should look something like this:
 
-![JaCoCo coverage report](./images/Workflow_Jacoco_image.png)
+![JaCoCo coverage report](images/Workflow_Jacoco_image.png)
 
 ### 4. Explore a generated test file
 
