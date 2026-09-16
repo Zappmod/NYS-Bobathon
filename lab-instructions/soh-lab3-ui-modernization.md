@@ -110,7 +110,7 @@ Bob will initiate the Java UI Modernization workflow and begin with the analysis
 
 Ensure the Project path points to your Java app and press `Continue`. Bob will run an initial build of the app to ensure starting state is working.
 
-![analyze](./images/analyze.png)
+![analyze](images/analyze.png)
 
 
 ## 2. Select `UI Modernization`
@@ -119,7 +119,7 @@ Select UI Modernization type. You can also enable or disable git flow. If select
 
 > Important note: Bob will make git commits automatically as he progresses through the workflow
 
-![sel-ui-mod](./images/select-ui-mod.png)
+![sel-ui-mod](images/select-ui-mod.png)
 
 Next, Bob will analyze the application architecture and create documentation in a subtask.
 
@@ -135,11 +135,11 @@ Next, Bob will ask you what stack you want to modernize to. For this lab, select
 
 And press `Setup Project`
 
-![select_stack](./images/select-stack.png)
+![select_stack](images/select-stack.png)
 
 From here, Bob will begin the backend migration in a subtask and track progress via a Todo List. You can press the Todo list item bar at the top of the Bob window to expand or minimize the list.
 
-![backend-migration](./images/backend-migration.png)
+![backend-migration](images/backend-migration.png)
 
 Bob will run `mvn clean package` to test compilation, identify and debug any errors, fix them, and repeat until the build works.
 
@@ -147,7 +147,7 @@ Bob will run `mvn clean package` to test compilation, identify and debug any err
 
 Bob will prompt you to run `mvn liberty:run`, do so in your terminal.
 
-![run-backend](./images/run-backend.png)
+![run-backend](images/run-backend.png)
 
 Paste any errors, e.g.
 ```
@@ -165,11 +165,11 @@ Next, Bob will work on configuring the new frontend stack, including creating a 
 
 You can track Bob's progress through the Todo list at the top:
 
-![frontend-migration](./images/frontend-migration.png)
+![frontend-migration](images/frontend-migration.png)
 
 When ready, Bob will prompt you to run the frontend via `npm run dev` to check the scaffolding for the project. Run that, then check at http://localhost:3000/ and you should see something like
 
-![frontend-scaffold](./images/frontend-scaffold.png)
+![frontend-scaffold](images/frontend-scaffold.png)
 
 If there are any errors, report them to Bob. If not, say something like: `The scaffold looks good`.
 
@@ -179,13 +179,13 @@ Now Bob will start building out the components then pages for the frontend app. 
 
 If you run into any errors, just paste them into Bob to debug. The end result should look something like this:
 
-![modernized-ui](./images/modernized-UI.png)
+![modernized-ui](images/modernized-UI.png)
 
 ## 7. Containerization & Validation
 
 Bob should containerize and validate the final state of modernization
 
-![done](./images/done.png)
+![done](images/done.png)
 
 ---
 
