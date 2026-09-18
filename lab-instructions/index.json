@@ -151,55 +151,6 @@
           "icon": "🔷"
         }
       ]
-    },
-    {
-      "id": "nasco-ticket-triage",
-      "title": "ServiceNow Ticket Triage",
-      "icon": "🎫",
-      "description": "AI-assisted ServiceNow ticket triage with Bob, using the ServiceNow MCP, Knowledge Base MCP, and Jira MCP across a midtier Angular/FastAPI app and a mainframe CICS/COBOL service.",
-      "download": "../NASCO-Ticket-Triage-main.zip",
-      "labs": [
-        {
-          "id": "nasco-lab0-setup",
-          "title": "Lab 0: Environment Setup",
-          "description": "Verify all three MCPs (ServiceNow, Knowledge Base, Jira) are connected and returning results; optionally start the AI Benefits Portal for Lab 1.",
-          "duration": "15 min",
-          "difficulty": "Beginner",
-          "icon": "🔧"
-        },
-        {
-          "id": "nasco-lab1-midtier-triage",
-          "title": "Lab 1: Midtier Ticket Triage",
-          "description": "Classify three AI Benefits Portal incidents, then run the incident-resolution skill for an Enhancement (CSR flag + Jira story) and a Code Defect (codebase fix + tests).",
-          "duration": "45–60 min",
-          "difficulty": "Intermediate",
-          "icon": "🎫"
-        },
-        {
-          "id": "nasco-lab2-analysis",
-          "title": "Lab 2: Ticket Analysis & Classification",
-          "description": "Interpret a mainframe incident as a user input error, classify four tickets by type, priority, and domain using the Knowledge Base, and surface related historical context.",
-          "duration": "30–45 min",
-          "difficulty": "Intermediate",
-          "icon": "🔍"
-        },
-        {
-          "id": "nasco-lab3-mainframe-resolution",
-          "title": "Lab 3: Mainframe Resolution Assistance",
-          "description": "Propose a root cause for a Code Defect, post a fix recommendation as a work note, then run the incident-resolution skill for both a Code Defect and an Enhancement (CSR Required flag).",
-          "duration": "45–60 min",
-          "difficulty": "Intermediate",
-          "icon": "🖥️"
-        },
-        {
-          "id": "nasco-lab4-csr-scoping",
-          "title": "Lab 4: Mainframe CSR Identification & Scoping",
-          "description": "Check the CSR register for duplicates, estimate effort and compile order, then create a tracked Jira story in SAM1 using the create-nasco-jira-task skill.",
-          "duration": "30–45 min",
-          "difficulty": "Intermediate",
-          "icon": "📋"
-        }
-      ]
     }
   ]
 }
