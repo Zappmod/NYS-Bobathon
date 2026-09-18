@@ -134,6 +134,23 @@
           "icon": "☕"
         }
       ]
+    },
+    {
+      "id": "dotnet",
+      "title": ".NET with Bob",
+      "icon": "🔷",
+      "description": "Build a sample ASP.NET Core Web API from scratch using IBM Bob — covering Plan mode, Agent mode, scaffolding, validation, and iteration.",
+      "labs": [
+        {
+          "id": "dotnet-with-bob-guide",
+          "title": "Lab 1: Building a .NET App with IBM Bob",
+          "description": "Create a full ASP.NET Core Web API with CRUD operations using IBM Bob's Plan, Agent, and Ask modes. Covers scaffolding, code exploration, feature extension, and API validation.",
+          "file": "dotnet-with-bob-guide.md",
+          "duration": "45–60 min",
+          "difficulty": "Beginner",
+          "icon": "🔷"
+        }
+      ]
     }
   ]
 }
